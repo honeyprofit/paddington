@@ -1,0 +1,458 @@
+/* Tablet 스타일: 1024px 이하 */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 860px;
+    }
+    header .container{
+        justify-content: space-between;
+    }
+    header .ham_all{
+        display: flex;
+    }
+    header nav{
+        display: none;
+    }
+    .ham_nav{
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--color_dark90);
+        z-index: 99;
+        padding-top: 120px;
+        padding-left: 48px;
+        backdrop-filter: blur(8px);
+    }
+    .ham_nav>ul{
+        width: 100%;
+    }
+    .ham_nav>ul>li{
+        margin-top: 40px;
+    }
+    .ham_nav>ul>li>a{
+        color: var(--color_main_y);
+        font-size: 24px;
+        line-height: 50px;
+        font-weight: 500;
+        transition: .3s;
+    }
+    .ham_nav>ul>li>ul.sub{
+        display: flex;
+        flex-wrap: wrap
+    }
+    .ham_nav>ul>li>ul.sub>li{
+        display: inline-flex;
+        margin-right: 16px;
+    }
+    .ham_nav>ul>li>ul.sub>li>a{
+        color: var(--color_white100);
+        font-size: 15px;
+        line-height: 36px;
+        vertical-align: center;
+        font-weight: 300;
+        transition: .3s;
+    }
+    header .contact{
+        display: none;
+    }
+    main .main_banner ul li.ms3{
+        background-position: right top;
+    }
+    main section aside{
+        height: 414px
+    }
+    main section{
+        padding-top:120px;
+    }
+    main section .button_wrap{ 
+        padding: 40px 0 160px;
+    }
+    main section.intro aside .container{
+        position: relative;
+        justify-content: end;
+    }
+    main section.intro aside .container span{
+        max-width: 360px;
+        justify-content: left;
+        position: absolute;
+        left: 8%;
+        top: 0;
+        text-align: start;
+    }
+    main section.intro aside .container img{
+        max-width: 610px;
+        min-width: 345px;
+        right: 0;
+    }
+    main section figure.bg{
+        display: none;
+    }
+    main section.char h2{
+        max-width: 100%;
+        padding-bottom: 200px;
+    }
+    main section.char .charters article a{
+        width: 100%;
+        height: 173px;
+    }
+    main section.char .charters article a h3{
+        width: 560px;
+        font-size: 120px;
+        position: relative;
+    }
+    main section.char .charters article:nth-child(2n-1) a h3{
+        justify-content: left;
+    }
+    main section.char .charters article a img{
+        opacity: 1;
+        transform: scale(.7) translateY(80px);
+    }
+    main section.char .charters article:nth-child(2n-1) a img{
+        left: 5%;
+    }
+    main section.char .charters article:nth-child(3) a img{
+        left: 3%;
+    }
+    main section.char .charters article:nth-child(2n) a img{
+        right: 5%;
+    }
+    .book_wrap{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+    }
+    .book_wrap ul{
+        position: static;
+    }
+    .book_wrap div{
+        display: none;
+    }
+    .book_wrap ul.book_wrap_l{
+        left: auto;
+        top: auto;
+        animation: none;
+    }
+    .book_wrap ul.book_wrap_r{
+        left: auto;
+        top: auto;
+        animation: none;
+    }
+    main section.book aside{
+        height: 344px
+    }
+    main section.book aside .container span{
+        width: 80vw;
+        padding-left: 420px;
+        padding-left: 30vw;
+    }
+    main section.book aside .container img{
+        left: -200px;
+        min-width: 660px;
+        max-width: 860px;
+    }
+    .movie_slide .ltrt_btn{
+        font-size: 100px;
+    }
+    .movie_slide .play_btn{
+        font-size: 100px;
+    }
+    ul.pager li{
+        width: 40vw;
+    }
+    .vid_modal iframe{
+        width: 560px; 
+        height: 315px;
+    }
+    footer{
+        height: 1000px;
+    }
+    footer ul.f_menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer ul.f_menu li{
+        padding: 4px 16px;
+    }
+    footer ul.f_sns{
+        padding-top: 28px;
+    }
+    footer ul.f_sns li{
+        padding: 0 12px;
+    }
+    footer .f_copy{
+        text-align: center;
+    }
+    .f_bg img{
+        min-width: 900px;
+    }
+
+
+
+/* Mobile 스타일: 360px 이하 */
+@media screen and (max-width: 360px) {
+    .container {
+        width: 340px;
+        width: 320px;
+    }
+    .ham_nav{
+        padding-top: 48px;
+        padding-left: 48px;
+    }
+    .ham_nav>ul>li{
+        margin-top: 12px;
+    }
+    .ham_nav>ul>li>a{
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .ham_nav>ul>li>ul.sub{
+        flex-direction: column;
+    }
+    .ham_nav>ul>li>ul.sub>li>a{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    header{
+        height: 48px;
+        overflow: hidden;
+    }
+    header h1{
+        width: 120px;
+        line-height: 48px;
+    } 
+    header ul.ham{
+        width: 20px;
+        height: 20px;
+    }
+    header ul.ham2{
+        width: 20px;
+        height: 24px;
+    }
+    main .main_banner ul li.ms1{
+        background-position: calc(100% + 200px) top;
+    }
+    main.contents .main_banner .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 28px;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+        margin: 8px;
+    }
+    main .main_banner .swiper-pagination-bullet{
+        width: 12px;
+        height: 12px;
+    }
+    main section{
+        padding-top: 80px;
+    }
+    main section .button_wrap{ 
+        padding: 10px 0 60px;
+    }
+    main section h2{
+        font-size: 32px;
+        line-height: 110%;
+    }
+    main section.intro {
+        position: relative;
+    }
+    main section.intro h2{
+        padding-top: 20px;
+    }
+    main section.intro p{
+        font-size: 14px;
+    }
+    button.discover{
+        box-sizing: border-box;
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+    }
+    button.discover{
+        width: 380px;
+        text-align: center;
+    }
+    main section.intro button{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        margin-bottom: 20px;
+        width: 320px;
+    }
+    main section aside{
+        height: 344px;
+        margin-top: 80px;
+    }
+    main section aside span{
+        font-size: 14px;
+        max-width: 156px;
+    }
+    main section.intro aside .container span{
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+    main section.intro aside .container img{
+        max-width: 270px;
+    }
+    main section.char h2{
+        padding-bottom: 280px;
+    }
+    main section.char .charters article a{
+        height: 72px;
+    }
+    main section.char .charters article a h3{
+        width: 330px;
+        font-size: 48px;
+        justify-content: center;
+    }
+    main section.char .charters article:nth-child(2n-1) a h3{
+        justify-content: center;
+    }
+    main section.char .charters article a img{
+        position: absolute;
+        top: 0;
+        transform: scale(.5);
+    }
+    main section.char .charters article:nth-child(1) a img{
+        left: 60%;
+        top: -380px;
+    }
+    main section.char .charters article:nth-child(2) a img{
+        left: 5%;
+        top: -450px;
+    }
+    main section.char .charters article:nth-child(3) a img{
+        left: 35%;
+        top: -440px;
+    }
+    main section.char .charters article:nth-child(4) a img{
+        left: 10%;
+        top: -520px;
+        transform: scale(.45);
+    }
+    main section.char .charters article:nth-child(5) a img{
+        left: 12%;
+        top: -600px;
+        transform: scale(.4);
+    }
+    main section.char .charters article:nth-child(6) a img{
+        left: 32%;
+        top: -620px;
+        transform: scale(.4);
+    }
+    main section.char .button_wrap{
+        margin-top: 40px;
+    }
+    main section.book h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    main section.book aside .container2 span{
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+    .book_wrap div{
+        display: none;
+    }
+    .book_wrap ul{
+        width: 340px;
+    }        
+    .book_wrap ul li{
+        width: 100%;
+        border-radius: 40px;
+        padding: 40px 50px;
+        margin-bottom: 14px;
+    }
+    .book_wrap ul li a img{
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+        margin-bottom: 24px;
+    }
+    .book_wrap ul li a h4{
+        display: none;
+    }
+    .book_wrap ul li a p{
+        font-size: 14px;
+    }
+    main section.book aside{
+        height: 258px;
+        margin-top: 0;
+    }
+    main section.book aside .container span{
+        height: 100%;
+    }
+    main section.book aside .container img{
+        min-width: 524px;
+        max-width: 960px;
+    }
+    main section.movie h2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    ul.pager li{
+        height: 120px;
+        margin: 8px;
+    }
+    .movie_slide ul.slide{
+        height:90vh;
+    }
+    .movie_slide .ltrt_btn .left_btn{
+        left: 10px;
+    }
+    .movie_slide .ltrt_btn .right_btn{
+        right: 10px;
+    }
+    .movie_slide .ltrt_btn{
+        font-size: 60px;
+    }
+    .movie_slide .play_btn{
+        font-size: 60px;
+    }
+    ul.pager{
+        margin: 20px auto;
+    }
+    .vid_modal i{
+        font-size: 40px;
+    }
+    .vid_modal iframe{
+        width: 360px;
+    }
+    footer{
+        height: 600px;
+    }
+    footer ul.f_sns li a{
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+    .f_bg img{
+        min-width: 260px;
+    }
+    footer .f_logo{
+        padding-top: 48px;
+        padding-bottom: 20px;
+        transition: .3s;
+    }
+    footer .f_logo img{
+        width: 240px;
+    }
+    footer .f_copy{
+        font-size: 10px;
+        bottom: 16px;
+    }
+    footer ul.f_menu li a{
+        font-size: 14px;
+    }
+}
+
+
+}

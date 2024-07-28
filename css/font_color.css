@@ -1,0 +1,65 @@
+body{
+    font-family: "Poppins", sans-serif;
+    background: var(--color_bg_ash100);
+    color: var(--color_white100);
+}
+
+.roboto{
+    font-family: "Roboto", sans-serif;
+}
+
+/* ----------- color --------- */
+
+:root {
+    --color_main_y: #FFB700;
+    --color_main_c: #007BA8;
+    --color_bg_ash100: #213553;
+    --color_dark100: #031128;
+    --color_dark90: rgba(3, 17, 40, 0.9);
+    --color_dark70: rgba(3, 17, 40, 0.7);
+    --color_dark20: rgba(3, 17, 40, 0.2);
+    --color_dark10: rgba(3, 17, 40, 0.1);
+    --color_grey: #333;
+    --color_white100: #fff;
+    --color_white90: rgba(255, 255, 255, 0.9);
+    --color_white70: rgba(255, 255, 255, 0.7);
+    --color_white20: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/*
+.color_main_y{
+    background: #FFB700;
+}
+.color_main_c{
+    background: #007BA8;
+}
+.color_bg_ash100{
+    background: #213553;
+}
+.color_bg_dark10{
+    background: rgba(3, 17, 40, 0.1);
+}
+.color_bg_dark20{
+    background: rgba(3, 17, 40, 0.2);
+}
+.color_bg_dark70{
+    background: rgba(3, 17, 40, 0.7);
+}
+.color_bg_dark100{
+    background: rgba(3, 17, 40, 1);
+}
+.color_white20{
+    color: rgba(255, 255, 255, 0.2);
+}
+.color_white70{
+    color: rgba(255, 255, 255, 0.7);
+}
+.color_white90{
+    color: rgba(255, 255, 255, 0.9);
+}
+.color_white100{
+    color: rgba(255, 255, 255, 1);
+}
+*/
